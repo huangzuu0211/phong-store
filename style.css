@@ -704,6 +704,7 @@ body {
 
 #banner3 .banner-box3 {
     background-image: url(img/logoadidas.jpg);
+    opacity: 30%;
 }
 
 #banner3 h2 {
