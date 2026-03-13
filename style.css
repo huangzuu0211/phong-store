@@ -757,12 +757,14 @@ body {
     font-weight: 900;
     font-size: 22px;
     margin-bottom: 5px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
 }
 
 #banner3 h3 {
     color: #ec544e;
     font-weight: 800;
     font-size: 14px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
 }
 
 /* Newsletter */
