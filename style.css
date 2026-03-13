@@ -402,16 +402,18 @@ body {
 }
 
 #hero {
-    background-image: url("img/nike-boot-tech.jpg");
+    background-image:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url("img/nike-boot-tech.jpg");
     height: 90vh;
     width: 100%;
     background-size: cover;
     background-position: top 25% right 0;
     padding: 0 80px;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-self: center;
-    display: flex;
+    justify-content: center;
 }
 
 #hero h4 {
@@ -420,7 +422,9 @@ body {
 }
 
 #hero h1 {
-    color: #33cc99
+    color: #00ffb3;
+    font-size: 60px;
+    font-weight: 800;
 }
 
 #hero p {
@@ -440,6 +444,10 @@ body {
 
 #hero h2 {
     color: #fff;
+}
+
+#hero h1,#hero h2,#hero h4,#hero p {
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
 }
 
 .logo {
