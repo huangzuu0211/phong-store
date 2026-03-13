@@ -645,8 +645,7 @@ body {
 /* Small 2 Banner */
 #sm-banner {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    gap: 30px;
 }
 
 #sm-banner .banner-box {
@@ -655,11 +654,27 @@ body {
     justify-content: center;
     align-items: flex-start;
     background-image: url(img/mua1tang1.jpg);
-    min-width: 540px;
+    flex: 1;
     height: 50vh;
     background-size: cover;
     background-position: center;
-    padding: 30px;
+    padding: 40px;
+    position: relative;
+    color: white;
+}   
+
+#sm-banner .banner-box::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.35);
+}
+
+#sm-banner .banner-box *{
+    position:relative;
 }
 
 #sm-banner .banner-box2 {
@@ -694,8 +709,7 @@ body {
 /* Small 3 Banner */
 #banner3 {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    gap: 25px;
 }
 
 #banner3 .banner-box {
@@ -704,12 +718,30 @@ body {
     justify-content: center;
     align-items: flex-start;
     background-image: url(img/bstxuan.jpg);
-    min-width: 30%;
+    flex: 1;
     height: 30vh;
     background-size: cover;
     background-position: center;
-    padding: 20px;
+    padding: 25px;
     margin-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+    position:relative;
+    color:white;
+}
+
+#banner3 .banner-box::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.4);
+}
+
+#banner3 .banner-box *{
+    position:relative;
 }
 
 #banner3 .banner-box2 {
@@ -724,12 +756,13 @@ body {
     color: #fff;
     font-weight: 900;
     font-size: 22px;
+    margin-bottom: 5px;
 }
 
 #banner3 h3 {
     color: #ec544e;
     font-weight: 800;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 /* Newsletter */
