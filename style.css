@@ -1099,56 +1099,59 @@ margin-top:10px;
     z-index: 999;
 }
 
-#shop-banner {
-    background-image: url("img/banner-shop.jpg"); /* đổi ảnh của bạn */
-    height: 40vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    
+#header {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    
-    padding: 0 80px;
-    
-    position: relative;
-    color: white;
-}
+    align-items: center;
+    justify-content: space-between;
 
-/* overlay làm tối ảnh */
-#shop-banner::before {
-    content: "";
-    position: absolute;
+    padding: 20px 80px;
+    background: #E3E6F3;
+
+    position: sticky;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.5);
+    z-index: 999;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
 }
 
-/* đảm bảo chữ nằm trên overlay */
-#shop-banner * {
-    position: relative;
-    z-index: 1;
+.logo {
+    width: 100px;
 }
 
-#shop-banner h2 {
-    font-size: 46px;
-    margin: 10px 0;
+#navbar {
+    display: flex;
+    align-items: center;
 }
 
-#shop-banner h4 {
-    font-size: 20px;
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
 }
 
-#shop-banner p {
+#navbar li a {
+    text-decoration: none;
     font-size: 16px;
-    margin-bottom: 15px;
+    color: #1a1a1a;
+    transition: 0.3s;
 }
 
-#page-header {
-    text-align: center;
-    padding: 40px;
+/* hover + active giống hình */
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+    position: relative;
+}
+
+/* gạch chân xanh */
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+
+    position: absolute;
+    bottom: -4px;
+    left: 0;
 }
