@@ -1042,7 +1042,7 @@ margin-top:10px;
 }
 /* Blog Page */
 #blog  {
-    padding:150px 150px 0px 150px;
+    padding: 100px 10% 0px 10%;
 
 }
 #blog .blog-box {
@@ -1051,12 +1051,10 @@ margin-top:10px;
     width: 100%;
     position: relative;
     padding-bottom:90px;
-
+    gap: 40px;
 }
 #blog .blog-img {
-    width:50%;
-    margin-right: 40px;
-
+    flex: 1;
 }
 #blog img {
     width: 100%;
@@ -1064,16 +1062,16 @@ margin-top:10px;
     object-fit: cover;
 }
 #blog .blog-details {
-    width: 50%;
-
+    flex: 1;
 }
 #blog .blog-details a {
     text-decoration: none;
-    font-size: 11px;
+    font-size: 13px;
     color: #000;
     font-weight: 700;
     position: relative;
     transition: 0.3s;
+    display: inline-block;
 }
 #blog .blog-details a::after {
     content: "";
@@ -1081,7 +1079,7 @@ margin-top:10px;
     height: 1px;
     background-color: #000;
     position: absolute;
-    top: 4px;
+    top: 50%;    
     right: -60px;
 }
 
@@ -1092,7 +1090,13 @@ margin-top:10px;
 #blog .blog-details a:hover::after {
     background-color: #088178;
 }
-
+#blog .blog-details h4 {
+    margin-bottom: 10px;
+}
+#blog .blog-details p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
 #blog .blog-box h1 {
     position: absolute;
     top: -40px;
@@ -1103,8 +1107,22 @@ margin-top:10px;
     z-index: -9;
 }
 
-
-
+/* --- RESPONSIVE CHO BLOG --- */
+@media (max-width: 799px) {
+    #blog {
+        padding: 80px 5%;
+    }
+    #blog .blog-box {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding-bottom: 60px;
+    }
+    #blog .blog-box h1 {
+        top: -30px;
+        font-size: 50px;
+    }
+}
 
 /* Responsive cho Product Page */
 @media (max-width: 477px) {
