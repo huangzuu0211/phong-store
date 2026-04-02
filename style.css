@@ -861,21 +861,15 @@ margin:10px 5px 10px 0;
 }
 
 .pay{
-width:200px;
-margin-top:10px;
-}
-#pay {
-    width: 300px;
-    position: relative;
-    top: -200px;;
-    right: 80px;
+width: 250px;
+margin-top: 15px;
 }
 
 /* =========================================
-   RESPONSIVE DESIGN (Dựa theo Video)
+    RESPONSIVE DESIGN
    ========================================= */
 
-/* Ẩn cấu trúc menu điện thoại ở màn hình Desktop mặc định */
+
 #mobile {
     display: none;
     align-items: center;
