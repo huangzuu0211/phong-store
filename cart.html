@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng - Web Bán Hàng</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <section id="header">
+        <a href="index.html"><img src="img/ChatGPT Image 23_32_43 25 thg 2, 2026.png" class="logo" alt="Logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="shop.html">Cửa hàng</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">Về chúng tôi</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="page-header" class="about-header">
+        <h2 class="h2cart" style="color: rgb(255, 255, 255); margin-top: 130px;">cart</h2>
+        <p style="color: rgb(255, 88, 80); margin-top: 30px;">Thêm mã giảm giá của bạn và tiết kiệm tới 70%!</p>
+        <div style="background-image: url(./img/pay.png); background-repeat: no-repeat; background-size: cover; height: 200px; margin-top: 20px;"></div>
+    </section>
+
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>LOẠI BỎ</td>
+                    <td>HÌNH ẢNH</td>
+                    <td>SẢN PHẨM</td>
+                    <td>GIÁ BÁN</td>
+                    <td>SỐ LƯỢNG</td>
+                    <td>TỔNG THU</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                   <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img class="cart-img" src="./img/nike-mercurial-vapor-15.jpg" alt=""></td>
+                    <td>Nike Mercurial Vapor 15 Elite</td>
+                    <td>$100</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                     <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img class="cart-img" src="./img/nike-mercurial-vapor-15.jpg" alt=""></td>
+                    <td>Nike Phantom GX 2 Elite</td>
+                    <td>$100</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img class="cart-img" src="./img/nike-mercurial-vapor-15.jpg" alt=""></td>
+                    <td>Nike Mercurial Superfly 9 Academy</td>
+                    <td>$100</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$100</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Áp Dụng Phiếu Giảm Giá</h3>
+            <div>
+                <input type="text" placeholder="Nhập phiếu giảm giá của bạn">
+                <button class="normal">Áp dụng</button>
+            </div>
+        </div>
+
+        <div id="subtotal">
+            <h3>Tổng Giỏ Hàng</h3>
+            <table>
+                <tr>
+                    <td>Tổng Thu</td>
+                    <td>$300</td>
+                </tr>
+                <tr>
+                    <td>Phí Chuyển Hàng</td>
+                    <td>Miễn Phí</td>
+                </tr>
+                <tr>
+                    <td><strong>Tổng</strong></td>
+                    <td><strong>$300</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Tiến hành kiểm tra</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <!-- Footer -->
+<footer>
+
+<div class="footer-container">
+
+<div class="footer-col">
+<h3>Thông Tin Liên Hệ</h3>
+
+<p><b>Địa chỉ:</b> VietNam, HCM, Quan 7</p>
+<p><b>Số điện thoại:</b> +840696736</p>
+<p><b>Giờ:</b> 09:00 - 16:00, Mon - Sat</p>
+
+<h4>Theo dõi chúng tôi</h4>
+
+<div class="social">
+<i class="fab fa-facebook-f"></i>
+<i class="fab fa-twitter"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-pinterest"></i>
+<i class="fab fa-youtube"></i>
+</div>
+
+</div>
+
+
+<div class="footer-col">
+<h3>Liên Hệ</h3>
+
+<a href="#">Về chúng tôi</a>
+<a href="#">Thông tin giao hàng</a>
+<a href="#">Chính sách bảo mật</a>
+<a href="#">Điều khoản & Điều kiện</a>
+<a href="#">Liên hệ chúng tôi</a>
+
+</div>
+
+
+<div class="footer-col">
+<h3>Tài khoản của tôi</h3>
+
+<a href="#">Đăng nhập</a>
+<a href="#">Xem giỏ hàng</a>
+<a href="#">Sản phẩm yêu thích</a>
+<a href="#">Theo dõi đơn hàng</a>
+<a href="#">Hỗ trợ</a>
+
+</div>
+
+
+<div class="footer-col">
+<h3>Cổng thanh toán an toàn</h3>
+<img id="pay" src="./img/pay.png" class="payimage">
+
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
