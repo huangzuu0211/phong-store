@@ -1548,6 +1548,7 @@ margin-top: 15px;
     height: 65px;
     object-fit: cover;
     margin-right: 15px;
+    border-radius: 8px;
 }
 
 #form-details .people div p {
