@@ -297,14 +297,10 @@ button.white {
     color: #333;
     font-size: 14px;
     font-weight: 600;
-    line-height: 1.4;
-    white-space: normal;
-    display: -webkit-box;
-    -webkit-line-clamp: 2; 
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    min-height: 48px; 
+    line-height: 1.4em; 
+    height: 2.8em;   
+    overflow: hidden;  
+    display: block;
 }
 
 #product1 .pro .des i {
@@ -624,16 +620,13 @@ margin:10px 5px 10px 0;
 
 .pay{
 width: 250px;
-height: 40px;
+height: 60px;
 object-fit: cover;
-object-position: center;
+object-position: left center;
 margin-top: 15px;
 }
 
-/* =========================================
-    RESPONSIVE DESIGN
-   ========================================= */
-
+/* RESPONSIVE DESIGN */
 
 #mobile {
     display: none;
@@ -1205,9 +1198,7 @@ margin-top: 15px;
     }
 }
 
-/* =========================================
-   CONTACT PAGE
-   ========================================= */
+/* CONTACT PAGE */
 
 /* Contact Details Section */
 #contact-info {
