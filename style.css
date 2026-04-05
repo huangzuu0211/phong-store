@@ -232,6 +232,8 @@ button.white {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
     transition: all 0.3s ease;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 #product1 .pro:hover {
@@ -268,6 +270,9 @@ button.white {
     color: #333;
     font-size: 14px;
     font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #product1 .pro .des i {
@@ -287,13 +292,14 @@ button.white {
     height: 40px;
     line-height: 40px;
     border-radius: 50px;
-    background-color: #f0f0f0;
-    color: #333;
-    border: 1px solid #ddd;
+    background-color: #e8f6ea;
+    color: #088178; 
+    border: 1px solid #cce7d0;
     position: absolute;
-    bottom: 15px;
-    right: 15px;
+    bottom: 20px;
+    right: 20px; 
     transition: 0.3s ease;
+    text-align: center;
 }
 
 #product1 .pro .cart:hover {
