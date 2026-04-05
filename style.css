@@ -1248,85 +1248,152 @@ margin-top: 15px;
 
 /* CARTING NHA CAC AE*/
 
-
-        #cart-add {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-top: 40px;
-        }
-
-        /* Phần Nhập Mã Giảm Giá */
-        #coupon {
-            width: 48%; /* Hạ xuống 48% để an toàn không bị rớt dòng */
-        }
-
-        #coupon h3,
-        #subtotal h3 {
-            padding-bottom: 15px;
-            font-weight: 700;
-            font-size: 20px;
-        }
-
-        #coupon div {
-            display: flex;
-            align-items: center; 
-        }
-
-        #coupon input {
-            padding: 12px 20px;
-            outline: none;
-            width: 60%;
-            margin-right: 10px;
-            border: 1px solid #e2e9e1;
-        }
-
-        /* Style chung cho nút bấm */
-        #coupon button,
-        #subtotal button {
-            background-color: #088178;
-            color: #fff;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-weight: 600;
-            white-space: nowrap;
-        }
-
-        #coupon button:hover,
-        #subtotal button:hover {
-            opacity: 0.9;
-        }
-
-        /* Phần Bảng Tổng Tiền */
-        #subtotal {
-            width: 48%; /* Hạ xuống 48% để ngang hàng với mã giảm giá */
-            border: 1px solid #e2e9e1;
-            padding: 30px;
-            border-radius: 4px;
-        }
-
-        #subtotal table {
-            border-collapse: collapse;
-            width: 100%;
-            margin-bottom: 20px;
-        }
-
-        #subtotal table td {
-            width: 50%;
-            border: 1px solid #e2e9e1;
-            padding: 15px 10px; /* Tăng khoảng cách cho bảng rộng rãi như hình */
-            font-size: 14px;
-        }
-
-        /* Responsive cho điện thoại */
-        @media (max-width: 799px) {
-            #cart-add { flex-direction: column; }
-            #coupon, #subtotal { width: 100%; margin-bottom: 30px;}
-        
+    #cart-add {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 40px;
     }
+
+    /* Phần Nhập Mã Giảm Giá */
+    #coupon {
+        width: 48%; 
+    }
+
+    #coupon h3,
+    #subtotal h3 {
+        padding-bottom: 15px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    #coupon div {
+        display: flex;
+        align-items: center; 
+    }
+
+    #coupon input {
+        padding: 12px 20px;
+        outline: none;
+        width: 60%;
+        margin-right: 10px;
+        border: 1px solid #e2e9e1;
+    }
+
+    /* Style chung cho nút bấm */
+    #coupon button,
+    #subtotal button {
+        background-color: #088178;
+        color: #fff;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: 600;
+        white-space: nowrap;
+    }
+
+    #coupon button:hover,
+    #subtotal button:hover {
+        opacity: 0.9;
+    }
+
+    /* Phần Bảng Tổng Tiền */
+    #subtotal {
+        width: 48%; 
+        border: 1px solid #e2e9e1;
+        padding: 30px;
+        border-radius: 4px;
+    }
+
+    #subtotal table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #subtotal table td {
+        width: 50%;
+        border: 1px solid #e2e9e1;
+        padding: 15px 10px; 
+        font-size: 14px;
+    }
+
+    #cart {
+    overflow-x: auto; 
+}
+
+#cart table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart table img {
+    width: 70px;
+    object-fit: cover;
+    border-radius: 4px; 
+}
+
+#cart table td:nth-child(1) { width: 100px; text-align: center; } 
+#cart table td:nth-child(2) { width: 150px; text-align: center; }
+#cart table td:nth-child(3) { width: 250px; text-align: center; font-weight: 600;} 
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6) { 
+    width: 150px; 
+    text-align: center; 
+} 
+
+#cart table td:nth-child(5) input {
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+    outline: none;
+    border: 1px solid #e2e9e1;
+    border-radius: 4px;
+}
+
+#cart table thead {
+    border: 1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+
+#cart table thead td {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+
+#cart table tbody tr td {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 14px;
+    border-bottom: 1px solid #e2e9e1; 
+}
+
+#cart table tbody td i {
+    color: #e21b1b; 
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+#cart table tbody td i:hover {
+    color: #088178;
+    transform: scale(1.1);
+}
+    
+    /* Responsive cho điện thoại */
+    @media (max-width: 799px) {
+        #cart-add { flex-direction: column; }
+        #coupon, #subtotal { width: 100%; margin-bottom: 30px;}
+    
+    }
+    
+    
     .h2cart {
         font-size: 90px;
         font-weight: 700;
